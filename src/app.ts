@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import userRoute from './routes/user.route';
 import { loadConfig } from './config/azureConfig';
-import logger from 'config/logger';
+import logger from './config/logger';
 
 dotenv.config();
 
