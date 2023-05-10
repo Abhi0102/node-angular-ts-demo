@@ -4,7 +4,7 @@
   "description": "A project for demo setup using typescript",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage && cd client && npm run test",
+    "test": "jest --coverage",
     "start": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "lint": "eslint src/",
     "prettier": "npx prettier --check 'src/'",
