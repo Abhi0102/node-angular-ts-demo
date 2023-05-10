@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
+  "proxy": "http://localhost:2000",
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.0",
