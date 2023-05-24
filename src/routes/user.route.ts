@@ -8,10 +8,8 @@ const router = Router();
 router.route('/v1/:id').get((async (req, res, next) => {
   logger.info(config);
   logger.error('On route v1');
-  if (!req.params.id) {
-    return next(new Error());
-  }
-  await axios.get(`https://fakestoreapi.com/products/${req.params.id}`);
+  const url = new URL(`https://fakestoreapi.com/products/${req.params.id}`);
+  await axios.get(url.href);
   res.status(200).json({ success: true, message: 'Successfully accessed' });
 }) as RequestHandler);
 
